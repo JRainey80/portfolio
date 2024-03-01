@@ -21,3 +21,4 @@ def connect():
 @app.route("/projects")
 def projects():
     return render_template("projects.html")
+
