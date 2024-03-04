@@ -1,5 +1,5 @@
 h1 {
-    text-align: center;
+    text-align: left;
     color:rgb(36, 38, 47);
     font-size: 60px;
     
@@ -7,11 +7,12 @@ h1 {
 
 body {
     background-image: url("/static/img/sleek\ gen.webp");
+    background-size: cover;
     
 }
 
 body, a {
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
     color: rgb(36, 38, 47);
 }p
