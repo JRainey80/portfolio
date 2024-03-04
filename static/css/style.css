@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    color:rgb(36, 38, 47);
+    font-size: 60px;
+    
+}
+
+body {
+    background-image: url("/static/img/sleek\ gen.webp");
+    
+}
+
+body, a {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(36, 38, 47);
+}p
