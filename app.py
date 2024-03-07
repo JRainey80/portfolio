@@ -4,25 +4,29 @@ from flask import Flask, render_template, request, url_for
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecret'
 
-tabs = ["About", "Projects", "Connect", "Home"]
+nav_items = [
+    {'name': 'Home', 'url':'/'},
+    {'name': 'About', 'url': '/about'},
+    {'name': 'Projects', 'url': '/projects'},
+    {'name': 'Connect', 'url': '/connect'}
+]
 
-@app.route('/', methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def index():
-    return render_template("index.html", title="Justin Rainey - Portolio", tabs=tabs)
+    return render_template("index.html", nav_items=nav_items)
 
 @app.route("/about", methods=["GET", "POST"] )
 def about():
-    return render_template("about.html")
+    return render_template("about.html" , nav_items=nav_items)
 
 @app.route("/connect", methods=["GET", "POST"])
 def connect():
-    return render_template("connect.html")
+    return render_template("connect.html", nav_items=nav_items)
 
 @app.route("/projects", methods=["GET", "POST"])
 def projects():
-    return render_template("projects.html")
+    return render_template("projects.html", nav_items=nav_items)
 
-@app.route("/home", methods=["GET", "POST"])
-def home():
-    return render_template('index.html')
+if __name__ == '__main__':
+    app.run(debug=True)
 

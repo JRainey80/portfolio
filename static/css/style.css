@@ -1,6 +1,6 @@
 h1 {
     text-align: left;
-    color:rgb(36, 38, 47);
+    color:azure;
     font-size: 60px;
     
 }
@@ -11,8 +11,9 @@ body {
     
 }
 
-body, a {
-    text-align: justify;
+
+.nav-link {
+    text-align: center;
+    color: azure;
     font-size: 20px;
-    color: rgb(36, 38, 47);
-}p
+}
