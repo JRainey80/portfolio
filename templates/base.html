@@ -8,14 +8,14 @@
   </head>
   <body>
     <header>
-    <nav>
-        <ul>
+    <nav class="nav-bar">
+        
             {% for item in nav_items %}
-            <li><a href="{{ item.url }}" class="nav-link">{{ item.name }}</a></li>
+            <a href="{{ item.url }}" class="nav-link">{{ item.name }}</a>
             {% endfor %}
-        </ul>
+        
     </nav>
-  </header>
+ 
     
 
 {% block content %}

@@ -1,19 +1,44 @@
-h1 {
-    text-align: left;
-    color:azure;
+html {
+    height: 100%;
+  }
+
+header h1 {
+    text-align: center;
+    color: azure;
     font-size: 60px;
     
 }
 
 body {
-    background-image: url("/static/img/sleek\ gen.webp");
+    margin: 0;
+    height: 100%;
+    background-image: ();
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed
     
 }
 
+.nav-bar {
+    text-align: left;
 
+}
 .nav-link {
-    text-align: center;
     color: azure;
     font-size: 20px;
+    text-align: left;
 }
+
+.About_Story {
+    color: azure;
+    font-size: 23px;
+    text-shadow: 1px 1px 2px #000;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+  
+
+  
