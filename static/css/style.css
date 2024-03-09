@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("/static/fonts/Montserrat/static/Montserrat-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mukta";
+    src: url("/static/fonts/Mukta/Mukta-Regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
     height: 100%;
   }
@@ -6,13 +21,28 @@ header h1 {
     text-align: center;
     color: azure;
     font-size: 60px;
-    
+     
+}
+.about_heading {
+    font-family:"Montserrat", sans-serif;
+}
+
+.home_heading {
+   font-family:"Montserrat", sans-serif;
+}
+
+.connect_heading {
+    font-family:"Montserrat", sans-serif;
+}
+
+.projects_heading {
+    font-family:"Montserrat", sans-serif;
 }
 
 body {
     margin: 0;
     height: 100%;
-    background-image: ();
+    background-image: url("/static/img/css-pattern-by-magicpattern.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed
@@ -21,13 +51,22 @@ body {
 
 .nav-bar {
     text-align: left;
-
 }
+
+.nav-bar a:hover {
+    color:darkorange;
+    text-decoration: underline;
+}
+    
+
+
 .nav-link {
     color: azure;
     font-size: 20px;
     text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 .About_Story {
     color: azure;
@@ -36,9 +75,28 @@ body {
     word-spacing: 2px;
     letter-spacing: 1px;
     text-align: justify;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
   
 
-  
+.deets {
+    list-style-type: none;
+    color: azure;
+    font-size: 23px;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+    
+}
+
+.deets li {
+    margin-bottom: 80px;
+    font-family: "Mukta", sans-serif;
+
+}
+
+.deets li a:hover {
+    color:darkorange;
+    text-decoration: underline;
+}
