@@ -1,16 +1,53 @@
 @font-face {
     font-family: "Montserrat";
-    src: url("/static/fonts/Montserrat/static/Montserrat-Regular.ttf") format("ttf");
+    src: url("/static/fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Mukta";
-    src: url("/static/fonts/Mukta/Mukta-Regular.ttf") format("ttf");
+    src: url("/static/fonts/Mukta/Mukta-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "Aboreto";
+    src: url("/static/fonts/Aboreto/Aboreto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Akaya_Telivigala";
+    src: url("/static/fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bayon";
+    src: url("/static/fonts/Bayon/Bayon-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Big_Shoulders_Inline_Display";
+    src: url("/static/fonts/Big_Shoulders_Inline_Display/BigShouldersInlineDisplay-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "test";
+    src: url("/static/fonts/Contrail_One/ContrailOne-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 
 html {
@@ -21,14 +58,14 @@ header h1 {
     text-align: center;
     color: azure;
     font-size: 60px;
-     
+    font-family: "test"; 
 }
 .about_heading {
-    font-family:"Montserrat", sans-serif;
+    font-family: "Big_Shoulders_Inline_Display";
 }
 
 .home_heading {
-   font-family:"Montserrat", sans-serif;
+   font-family: "Big_Shoulders_Inline_Display";
 }
 
 .connect_heading {
@@ -64,7 +101,7 @@ body {
     color: azure;
     font-size: 20px;
     text-align: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "test";
 }
 
 
@@ -77,6 +114,7 @@ body {
     text-align: justify;
     margin-left: 100px;
     margin-right: 100px;
+    font-family: "test";
 }
   
 
@@ -92,11 +130,28 @@ body {
 
 .deets li {
     margin-bottom: 80px;
-    font-family: "Mukta", sans-serif;
+    font-family: "test", sans-serif;
 
 }
 
 .deets li a:hover {
     color:darkorange;
     text-decoration: underline;
+}
+
+.project_listing {
+    text-align: center;
+}
+
+.project_listing h2 {
+    text-align: left;
+    color: azure;
+}
+
+
+.creating {
+    width: 25%; 
+    max-width: 100px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

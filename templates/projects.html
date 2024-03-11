@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1 class="projects_heading">So Far</h1>
+    <h1>So Far</h1>
 </header>
-  
+  <div class="project_listing">
+    <h2>This Site:</h2>
+    <img src="{{url_for("static", filename='/img/creating a site.webp') }}">
+  </div>
+
 {% endblock %}
