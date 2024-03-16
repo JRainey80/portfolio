@@ -8,15 +8,33 @@
   </head>
   <body>
     <header>
-    <nav class="nav-bar">
+      <nav class="nav-bar">
         
             {% for item in nav_items %}
             <a href="{{ item.url }}" class="nav-link">{{ item.name }}</a>
-            {% endfor %}
+            {% endfor %} 
+      </nav> 
         
-    </nav>
- 
-    
+      <nav id="ham-nav" class="ham-nav">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler">
+          <div class="hamburger"><div></div></div>
+          <div class="menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/projects">Projects</a></li>
+                  <li><a href="/connect">Connect</a></li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 {% block content %}
 {% endblock %}

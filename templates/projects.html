@@ -1,10 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>So Far</h1>
-</header>
+  
+<h1 class="project_listing">So Far</h1>
   <div class="project_listing">
     <h2>This Site:</h2>
-    <img src="{{url_for("static", filename='/img/creating a site.webp') }}">
+    <div class="grid-container">
+      <p>Creating this site has been a rewarding experience. I began by first, 
+        learning Python. I had covered many fundamentals in school, but I 
+        needed repetition at working through control flow logic and syntax 
+        refinement. I moved on to learning flask since it seemed fitting for
+        a basic, static site with minimal back end functionality. After a solid 
+        flask course, I spent some time with CSS and HTML fundamentals and then 
+        dove right in! I set up GitHub to manage code between my two devices; a
+        Linux vm and a Windows pc. Consulting the courses I learned from, Google,
+        Youtube, and ChatGPT; I put it all together and really had fun. Besides
+        needing a site to showcase my projects and brand, I wanted something 
+        tangeable to support for the next projects: Dockerizing the site, hosting 
+        it on Azure, implementing CI/CD, log management, and coding it all in Terraform. 
+      </p>
+      <img class="creating" src="{{url_for("static", filename='/img/creating a site.webp') }}">
+      <video class="me_vid_one" width="320" height="240" controls>
+        <source src="{{url_for("static", filename='/video/RaineyCloud Video 1 - Made with Clipchamp_1710182158842.mp4') }}" type="video/mp4">
+      </video>
+    </div>
+    
   </div>
 
 {% endblock %}
