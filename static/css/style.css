@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("/static/fonts/Montserrat/static/Montserrat-Regular.ttf")
+  src: url("/static/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -14,15 +14,16 @@
 }
 
 @font-face {
-  font-family: "Aboreto";
-  src: url("/static/fonts/Aboreto/Aboreto-Regular.ttf") format("truetype");
+  font-family: "essc";
+  src: url("/static/fonts/Encode_Sans_Semi_Condensed/EncodeSansSemiCondensed-Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Akaya_Telivigala";
-  src: url("/static/fonts/Akaya_Telivigala/AkayaTelivigala-Regular.ttf")
+  font-family: "c-one";
+  src: url("/static/fonts/Contrail_One/ContrailOne-Regular.ttf")
     format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -45,7 +46,16 @@
 
 @font-face {
   font-family: "test";
-  src: url("/static/fonts/Bayon/Bayon-Regular.ttf") format("truetype");
+  src: url("/static/fonts/Encode_Sans_Semi_Condensed/EncodeSansSemiCondensed-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "zcool";
+  src: url("/static/fonts/ZCOOL_QingKe_HuangYou/ZCOOLQingKeHuangYou-Regular.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -63,7 +73,7 @@
   font-size: 50px;
   font-family: "Federo";
   width: 100%;
-  transform: translateX(40px);
+  transform: translateX(-75px);
 }
 
 .project_listing {
@@ -77,7 +87,7 @@
 .project_listing h2 {
   text-align: left;
   color: azure;
-  font-family: "test";
+  font-family: "Federo";
   margin-left: 20px;
 }
 
@@ -86,7 +96,7 @@
   color: azure;
   font-size: 50px;
   font-family: "Federo";
-  transform: translateX(40px);
+  transform: translateX(-75px);
 }
 
 .home_heading h1 {
@@ -94,7 +104,7 @@
   color: azure;
   font-size: 50px;
   font-family: "Federo";
-  transform: translateX(40px);
+  transform: translateX(-75px);
 }
 html {
   height: 100%;
@@ -241,7 +251,7 @@ html {
   text-align: center;
   flex: wrap;
   justify-content: center;
-  font-family: "test";
+  font-family: "fanwood";
 }
 
 .menu-wrap .menu > div > div > ul > li > a {
@@ -254,8 +264,9 @@ html {
 }
 
 .ham-nav li a {
-  font-family: "test";
+  font-family: "c-one";
   color: azure;
+  font-weight: bold;
 }
 
 .ham-nav li a:hover {
@@ -284,16 +295,16 @@ body {
   color: azure;
   font-size: 20px;
   text-align: right;
-  font-family: "test";
+  font-family: "Bayon";
 }
 
 .about_story {
-  color: azure;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
   letter-spacing: 1px;
-  font-family: "test";
+  font-family: "essc";
   max-width: 800px;
   display: flex;
   justify-content: center;
@@ -313,7 +324,8 @@ body {
 
 .contact_info li {
   margin-bottom: 80px;
-  font-family: "test";
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 
 .contact_info li a:hover {
@@ -327,7 +339,7 @@ body {
 }
 
 .Cell {
-  color: azure;
+  color: rgb(255, 255, 255);
 }
 
 .grid-container {
@@ -340,11 +352,11 @@ body {
 
 .grid-container p {
   max-width: 600px;
-  color: azure;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   text-shadow: 1px 1px 2px #000;
   letter-spacing: 1px;
-  font-family: "test";
+  font-family: "essc";
   grid-column: 1 / 2;
   grid-row: 1 / 1;
   justify-self: center;
@@ -384,11 +396,11 @@ body {
 
 .about-grid-container p {
   max-width: 600px;
-  color: azure;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   text-shadow: 1px 1px 2px #000;
   letter-spacing: 1px;
-  font-family: "test";
+  font-family: "essc";
   grid-column: 2 / 2;
   grid-row: 1 / 1;
   justify-self: center;
@@ -406,6 +418,7 @@ body {
   max-width: 400px;
   height: auto;
   padding: 5px;
+  border-radius: 12px;
 }
 
 .ai_j1 {
@@ -418,6 +431,7 @@ body {
   max-width: 400px;
   height: auto;
   padding: 5px;
+  border-radius: 12px;
 }
 
 .ai_j2 {
@@ -430,6 +444,7 @@ body {
   max-width: 400px;
   height: auto;
   padding: 5px;
+  border-radius: 12px;
 }
 
 .ai_j3 {
@@ -442,6 +457,7 @@ body {
   max-width: 400px;
   height: auto;
   padding: 5px;
+  border-radius: 12px;
 }
 
 .fa-linkedin,
