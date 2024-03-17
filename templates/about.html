@@ -1,19 +1,26 @@
-{% extends "base.html" %}
-{% block content %}
-
-<h1>How I got here</h1>
-<p class="About_Story">I've spent the past 17 years as a medical imaging technologist.
-  It has been great for many reasons, providing care to those in need topping the list. 
-  I am very ambitious and driven which has taken me far in this field. In management roles 
-  I've had the privelege of "being the change" and enhancing the patient care experience. 
-  I also helped improve the job experience for those I've managed and mentored. After some 
-  time, I realized that I had skills that were valuable, but in my <em>role</em> weren't 
-  typical; High attention to detail, being highly proactive in problem solving and process 
-  improvement. These traits, coupled with a desire to get involved with the most advanced 
-  technology on the globe have landed me here: Software Engineering, Cloud Engineering, Data 
-  Engineering. I'm interested in all of it. So, I've spent the last two years on a quest to 
-  become an engineer and use the tenacity that drives me to make a big impact in tech! 
-  What can I engineer for you?</p>
-{% endblock %}
-    
-  
+{% extends "base.html" %} {% block content %}
+<header class="about_heading">
+  <h1>How I got here</h1>
+</header>
+<div class="about-grid-container">
+  <img class="worlds-collide" src="{{url_for("static",
+  filename='/img/worlds_collide.webp') }}">
+  <p class="about_story">
+    For the past 17 years, I've been deeply involved in the world of medical
+    imaging technology, which has been incredibly fulfilling, especially when it
+    comes to helping patients. My drive and ambition have served me well in this
+    field, especially in leadership roles where I had the opportunity to make a
+    real difference in improving patient care and enhancing the work environment
+    for my team. I realized that my work had honed some unique skills that
+    aren't common in my field, like a keen eye for detail and a proactive
+    approach to solving problems and improving processes. These skills, along
+    with my passion for working with cutting-edge technology, inspired me to
+    shift my career path toward Software Engineering. I'm excited by all facets
+    of this field and have spent the last two years training to become an
+    engineer, eager to apply my drive and determination to make a significant
+    impact in the tech world. Now, I'm ready to dive into new challenges and see
+    how my background and skills can contribute to innovation and success in
+    your company. So, what can I engineer for you?
+  </p>
+  {% endblock %}
+</div>

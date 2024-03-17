@@ -1,8 +1,23 @@
-{% extends "base.html" %}
-    {% block content %}
-
+{% extends "base.html" %} {% block content %}
+<header class="home_heading">
   <h1>Justin Rainey</h1>
-<div class="Home_head">
-    <img src="{{url_for("static", filename='/img/red.jpg') }}">
-    
-    {% endblock %}
+</header>
+<div class="home_head">
+  <img src="{{url_for("static", filename='/img/red.jpg') }}">
+</div>
+<div class="ai_j2">
+  <img src="{{url_for("static",
+  filename='/img/0d2a4a76-4-272911-Justi2-man-Forex-charts-background-business-man-cartoon.png')
+  }}">
+</div>
+<div class="ai_j3">
+  <img src="{{url_for("static",
+  filename='/img/f41b8e9e-3-272911-Justi2-man-sunglasses-leather-jacket-(explosions)art-by-greg-rutkowski-cinematic.png')
+  }}">
+</div>
+<div class="ai_j1">
+  <img src="{{url_for("static",
+  filename='/img/9428a0e8-3-272911-handsome-portrait-of-male-Justi2-man-give-space-above-the-head-(coloured-ink-dra.png')
+  }}">
+</div>
+{% endblock %}
