@@ -13,9 +13,11 @@ nav_items = [
     {'name': 'Connect', 'url': '/connect'}
 ]
 
+
 @app.route("/", methods=["GET"])
 def index():
-    return render_template("index.html", nav_items=nav_items)
+    #head_shots = ["img/red.jpg", "img/toonie.png", "img/explosions.png", "img/splat.png", "img/sleek.png", "img/Steampunk.png", "img/star_captain.png"]
+    return render_template("index.html", nav_items=nav_items) #head_shots=head_shots)
 
 @app.route("/about", methods=["GET"])
 def about():
