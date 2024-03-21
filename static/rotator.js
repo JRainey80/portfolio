@@ -9,12 +9,12 @@ console.log(nextBtn);*/
 let x = 0;
 
 prevBtn.addEventListener("click", () => {
-    x = x + 45;
+    x = x + 51.43;
     rotate();
 });
 
 nextBtn.addEventListener("click", () => {
-    x = x - 45;
+    x = x - 51.43;
     rotate();
 });
 function rotate() { 

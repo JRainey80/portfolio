@@ -122,17 +122,21 @@ body {
   align-items: normal;
   text-align: center;
   justify-content: flex-start;
-  height: 30vh;
+  height: 80vh;
   overflow: hidden;
   background-image: url("/static/img/css-pattern-by-magicpattern3.png");
-  background-position: center;
+  background-position: 50% 50%;
+  background-size:cover;
   padding: 10px;
 }
 
+html {
+  height: 100%;
+}
 .image-container {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: auto;
   margin: 0 auto;
   transform-style: preserve-3d;
   transform: perspective(1000px) rotateY(0deg);
@@ -141,13 +145,12 @@ body {
 
 .image-container span {
   position: absolute;
-  transform-style: preserve-3d;
+  
   top: 0;
   left: 0;
   width: 90%;
   transform-origin: center;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
-  transition: transform 0.7s ease;
+  transform: rotateY(calc(var(--i) * 51.43deg)) translateZ(300px);
   display: inline-block;
 }
 
@@ -160,7 +163,7 @@ body {
 
 .btn-container {
   position: relative;
-  width: 80%;
+  width: 90%;
   align-items: flex-end;
 }
 
@@ -181,7 +184,7 @@ body {
 }
 
 #next {
-  right: -10%;
+  right: 0%;
 }
 
 .btn:hover {
@@ -206,9 +209,9 @@ body {
 .image-container span:nth-child(6) {
   --i: 5;
 }
-/*.image-container span:nth-child(7) {
+.image-container span:nth-child(7) {
   --i: 6;
-}*/
+}
 .project_heading h1 {
   text-align: center;
   color: azure;
