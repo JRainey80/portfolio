@@ -1,8 +1,8 @@
 {% extends "base.html" %} {% block content %}
-<!--<header class="home_heading">
+<header class="home_heading">
   <h1>Justin Rainey</h1>
 </header>
-<div class="home_head">
+<!--<div class="home_head">
   <img src="{{url_for("static", filename='/img/red.jpg') }}">
 </div>
 <div class="ai_j2">
@@ -27,35 +27,35 @@
   {% endfor %}
 </div>
 </div>-->
-  <div class="image-container">
-    <span style="--i: 1">
-      <img src="{{ url_for('static', filename='img/red.jpg') }}"/>
-    </span>
-    <span style="--i: 2">
-      <img src="{{ url_for('static', filename='img/toonie.png') }}"/>
-    </span>
-    <span style="--i: 3">
-      <img src="{{ url_for('static', filename='img/explosions.png') }}"/>
-    </span>
-    <span style="--i: 4">
-      <img src="{{ url_for('static', filename='img/splat.png') }}"/>
-    </span>
-    <span style="--i: 5">
-      <img src="{{ url_for('static', filename='img/sleek.png') }}"/>
-    </span>
-    <span style="--i: 6">
-      <img src="{{ url_for('static', filename='img/Steampunk.png') }}"/>
-    </span>
-    <span style="--i: 7">
-      <img src="{{ url_for('static', filename='img/star_captain.png') }}"/>
-    </span>
-  </div>
+<div class="image-container">
+  <span style="--i: 1">
+    <img src="{{ url_for('static', filename='img/red.jpg') }}" />
+  </span>
+  <span style="--i: 2">
+    <img src="{{ url_for('static', filename='img/toonie.png') }}" />
+  </span>
+  <span style="--i: 3">
+    <img src="{{ url_for('static', filename='img/explosions.png') }}" />
+  </span>
+  <span style="--i: 4">
+    <img src="{{ url_for('static', filename='img/splat.png') }}" />
+  </span>
+  <span style="--i: 5">
+    <img src="{{ url_for('static', filename='img/sleek.png') }}" />
+  </span>
+  <span style="--i: 6">
+    <img src="{{ url_for('static', filename='img/Steampunk.png') }}" />
+  </span>
+  <span style="--i: 7">
+    <img src="{{ url_for('static', filename='img/star_captain.png') }}" />
+  </span>
+</div>
 
-  <div class="btn-container">
-    <button class="btn" id="prev">Prev</button>
-    <button class="btn" id="next">Next</button>
-  </div>
+<div class="btn-container">
+  <button class="btn" id="prev">Prev</button>
+  <button class="btn" id="next">Next</button>
+</div>
 
-  <script src="{{ url_for('static', filename='rotator.js') }}"></script>
+<script src="{{ url_for('static', filename='rotator.js') }}"></script>
 
 {% endblock %}

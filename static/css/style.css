@@ -46,8 +46,7 @@
 
 @font-face {
   font-family: "Aboreto";
-  src: url("/static/fonts/Aboreto/Aboreto-Regular.ttf")
-    format("truetype");
+  src: url("/static/fonts/Aboreto/Aboreto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -120,15 +119,15 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items:normal;
+  align-items: normal;
   text-align: center;
-  justify-content:center;
-  height: 60vh;
+  justify-content: flex-start;
+  height: 30vh;
   overflow: hidden;
-  background-color: #000;
+  background-image: url("/static/img/css-pattern-by-magicpattern3.png");
+  background-position: center;
   padding: 10px;
-  }
-
+}
 
 .image-container {
   position: relative;
@@ -136,30 +135,33 @@ body {
   height: 200px;
   margin: 0 auto;
   transform-style: preserve-3d;
-  transform: perspective(1000px) rotateY(45deg);
+  transform: perspective(1000px) rotateY(0deg);
   transition: transform 0.7s;
 }
 
 .image-container span {
-  position:absolute;
+  position: absolute;
+  transform-style: preserve-3d;
   top: 0;
   left: 0;
   width: 90%;
   transform-origin: center;
-  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+  transition: transform 0.7s ease;
+  display: inline-block;
 }
 
 .image-container span img {
-  position:absolute;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-
 }
 
 .btn-container {
   position: relative;
-  width: 80%
+  width: 80%;
+  align-items: flex-end;
 }
 
 .btn {
@@ -175,24 +177,44 @@ body {
 }
 
 #prev {
-  left: 43%;
+  left: 15%;
 }
 
 #next {
-  right: 20%;
+  right: -10%;
 }
 
 .btn:hover {
   filter: brightness(1.5);
 }
 
+.image-container span:nth-child(1) {
+  --i: 0;
+}
+.image-container span:nth-child(2) {
+  --i: 1;
+}
+.image-container span:nth-child(3) {
+  --i: 2;
+}
+.image-container span:nth-child(4) {
+  --i: 3;
+}
+.image-container span:nth-child(5) {
+  --i: 4;
+}
+.image-container span:nth-child(6) {
+  --i: 5;
+}
+/*.image-container span:nth-child(7) {
+  --i: 6;
+}*/
 .project_heading h1 {
   text-align: center;
   color: azure;
   font-size: 50px;
   font-family: "Federo";
   width: 100%;
- 
 }
 
 .project_listing {
@@ -215,7 +237,6 @@ body {
   color: azure;
   font-size: 50px;
   font-family: "Federo";
-
 }
 
 .home_heading h1 {
@@ -224,9 +245,7 @@ body {
   font-size: 50px;
   font-family: "Federo";
   position: sticky;
-
 }
-
 
 .ham-nav {
   float: right;
@@ -386,18 +405,16 @@ body {
   font-family: "bsid";
   color: azure;
   font-size: 23px;
- 
 }
 
 .ham-nav li a:hover {
   color: darkorange;
 }
 
-
 .nav-bar {
   float: left;
-  position:relative;
-  text-align:left;
+  position: relative;
+  text-align: left;
 }
 
 .nav-bar a:hover {
@@ -409,7 +426,6 @@ body {
   font-size: 20px;
   text-align: left;
   font-family: "Bayon";
-
 }
 
 .about_story {
@@ -476,7 +492,7 @@ body {
   justify-self: center;
   text-wrap: balance;
   padding: 10px;
-  font-size:x-large;
+  font-size: x-large;
   font-weight: 600;
 }
 
@@ -522,8 +538,8 @@ body {
   justify-self: center;
   text-wrap: balance;
   padding: 10px;
-  font-size:x-large;
-  font-weight:600;
+  font-size: x-large;
+  font-weight: 600;
 }
 
 /*.home_head {

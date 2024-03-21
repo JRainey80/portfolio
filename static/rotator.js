@@ -8,15 +8,15 @@ console.log(nextBtn);*/
 
 let x = 0;
 
-prevBtn.addEventListenter("click", () => {
+prevBtn.addEventListener("click", () => {
     x = x + 45;
     rotate();
 });
 
-nextBtn.addEventListenter("click", () => {
+nextBtn.addEventListener("click", () => {
     x = x - 45;
     rotate();
 });
 function rotate() { 
-    imageContainer.style.transform = 'perspective(1000px) rotateY(${x}deg)';
+    imageContainer.style.transform = `perspective(1000px) rotateY(${x}deg)`;
 }
