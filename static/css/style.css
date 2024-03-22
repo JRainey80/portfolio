@@ -122,12 +122,13 @@ body {
   align-items: normal;
   text-align: center;
   justify-content: flex-start;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
   background-image: url("/static/img/css-pattern-by-magicpattern3.png");
   background-position: 50% 50%;
   background-size:cover;
-  padding: 10px;
+  padding: 20px;
+  overflow-y: auto;
 }
 
 html {
@@ -135,7 +136,7 @@ html {
 }
 .image-container {
   position: relative;
-  width: 300px;
+  width: 260px;
   height: auto;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -145,46 +146,48 @@ html {
 
 .image-container span {
   position: absolute;
-  
   top: 0;
   left: 0;
-  width: 90%;
+  width: 100%;
   transform-origin: center;
-  transform: rotateY(calc(var(--i) * 51.43deg)) translateZ(300px);
-  display: inline-block;
+  transform: rotateY(calc(var(--i) * 51.43deg)) translateZ(400px);
+ 
 }
 
 .image-container span img {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  image-rendering: optimizeQuality;
+  image-rendering: crisp-edges;
 }
 
 .btn-container {
   position: relative;
-  width: 90%;
-  align-items: flex-end;
+  width: 100%;
+  align-items:center;
 }
 
 .btn {
-  position: absolute;
-  bottom: -300px;
-  background: darkorange;
+  position:absolute;
+  background:cadetblue;
   color: azure;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  justify-content: center;
+  justify-content:flex-start;
+  font-family: "Mukta";
 }
 
 #prev {
-  left: 15%;
+  left: 17%;
 }
 
 #next {
-  right: 0%;
+  right: 17%;
 }
 
 .btn:hover {
@@ -399,7 +402,7 @@ html {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
-  font-size: 40px;
+  font-size: 50px;
   opacity: 1;
   float: none;
 }
@@ -426,7 +429,7 @@ html {
 
 .nav-link {
   color: azure;
-  font-size: 20px;
+  font-size: 23px;
   text-align: left;
   font-family: "Bayon";
 }
@@ -437,11 +440,11 @@ html {
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
   letter-spacing: 1px;
-  font-family: "essc";
+  font-family: "Mukta";
   max-width: 800px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items:center;
   position: relative;
   margin: auto;
 }
@@ -481,21 +484,21 @@ html {
   grid-template-rows: auto;
   grid-template-areas: "p img";
   margin: auto;
+  
 }
 
 .grid-container p {
   max-width: 90%;
   color: azure;
-  font-size: 20px;
+  font-size: 23px;
   text-shadow: 1px 1px 2px #000;
   letter-spacing: 1px;
-  font-family: "essc";
+  font-family: "Mukta";
   grid-column: 1 / 2;
   grid-row: 1 / 1;
-  justify-self: center;
+  justify-content: left;
   text-wrap: balance;
   padding: 10px;
-  font-size: x-large;
   font-weight: 600;
 }
 
