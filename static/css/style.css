@@ -126,7 +126,7 @@ body {
   overflow: hidden;
   background-image: url("/static/img/css-pattern-by-magicpattern3.png");
   background-position: 50% 50%;
-  background-size:cover;
+  background-size: cover;
   padding: 20px;
   overflow-y: auto;
 }
@@ -136,7 +136,7 @@ html {
 }
 .image-container {
   position: relative;
-  width: 260px;
+  width: 200px;
   height: auto;
   margin: 0 auto;
   transform-style: preserve-3d;
@@ -150,8 +150,7 @@ html {
   left: 0;
   width: 100%;
   transform-origin: center;
-  transform: rotateY(calc(var(--i) * 51.43deg)) translateZ(400px);
- 
+  transform: rotateY(calc(var(--i) * 51.43deg)) translateZ(300px);
 }
 
 .image-container span img {
@@ -167,27 +166,27 @@ html {
 .btn-container {
   position: relative;
   width: 100%;
-  align-items:center;
+  align-items: flex-start;
 }
 
 .btn {
-  position:absolute;
-  background:cadetblue;
+  position: absolute;
+  background: cadetblue;
   color: azure;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  justify-content:flex-start;
+  justify-content: flex-start;
   font-family: "Mukta";
 }
 
 #prev {
-  left: 17%;
+  left: 9%;
 }
 
 #next {
-  right: 17%;
+  right: 9%;
 }
 
 .btn:hover {
@@ -234,7 +233,7 @@ html {
 .project_listing h2 {
   text-align: left;
   color: azure;
-  font-family: "Federo";
+  font-family: "Mukta";
   margin-left: 20px;
 }
 
@@ -444,7 +443,7 @@ html {
   max-width: 800px;
   display: flex;
   justify-content: left;
-  align-items:center;
+  align-items: left;
   position: relative;
   margin: auto;
 }
@@ -484,7 +483,6 @@ html {
   grid-template-rows: auto;
   grid-template-areas: "p img";
   margin: auto;
-  
 }
 
 .grid-container p {
@@ -497,9 +495,10 @@ html {
   grid-column: 1 / 2;
   grid-row: 1 / 1;
   justify-content: left;
-  text-wrap: balance;
+  text-align: left;
+  text-wrap: pretty;
   padding: 10px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .grid-container img {
@@ -538,14 +537,15 @@ html {
   font-size: 20px;
   text-shadow: 1px 1px 2px #000;
   letter-spacing: 1px;
-  font-family: "essc";
+  font-family: "Mukta";
   grid-column: 2 / 2;
   grid-row: 1 / 1;
-  justify-self: center;
+  justify-content: left;
+  text-align: left;
   text-wrap: balance;
   padding: 10px;
   font-size: x-large;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /*.home_head {
