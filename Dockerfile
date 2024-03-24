@@ -1,11 +1,11 @@
-FROM python:3.10.12
+FROM tiangolo/uwsgi-nginx:python3.11
 
 WORKDIR /app
 
-COPY './requirements.txt' .
+COPY ./requirements.txt /app/
 
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY ./app.py /app/
 
-ENTRYPOINT ["python", "app.py"]
+CMD ("flask", "run", "--host", "0.0.0.0")
