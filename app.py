@@ -3,7 +3,8 @@ import os
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev_key')
+#app.config['SECRET_KEY'] = 'mysecret'
+app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 
 
 

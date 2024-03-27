@@ -124,7 +124,7 @@ body {
   justify-content: flex-start;
   height: 100vh;
   overflow: hidden;
-  background-image: url("/static/img/css-pattern-by-magicpattern3.png");
+  background-image: url('/static/img/css-pattern-by-magicpattern3.png');
   background-position: 50% 50%;
   background-size: cover;
   padding: 20px;
@@ -283,7 +283,7 @@ html {
 }
 
 .text-container {
-  flex-direction: row-reverse;
+  flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -303,7 +303,6 @@ html {
   justify-content: center;
   text-align: left;
   display: flex;
-  flex-direction: row;
   font-size: 1.4em;
   font-weight: 450;
   flex: 1 1 auto;
@@ -311,13 +310,14 @@ html {
 
 .text-container img {
   height: auto;
-  width: 475px;
+  width: 493px;
   max-width: 100%;
   flex: 1 1 auto;
   justify-content: center;
   display: block; 
   margin: 0 auto;
   align-items: center;
+  border-radius: 10px;
  
 }
 
@@ -380,13 +380,14 @@ html {
 
 .about-text-container img {
   height: auto;
-  width: 380px;
+  width: 400px;
   max-width: 100%;
   flex: 1 1 auto;
   justify-content: center;
   display: block; 
   margin: 0 auto;
   align-items: center;
+  border-radius: 10px;
 }
 
 .about-text-container p {
@@ -397,7 +398,6 @@ html {
   font-family: "Mukta";
   justify-content: center;
   text-align: left;
-
   font-size: 1.4em;
   font-weight: 450;
   flex: 1 1 auto;
