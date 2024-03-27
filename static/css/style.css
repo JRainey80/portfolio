@@ -233,20 +233,15 @@ html {
 
 .projects_story {
   color: rgb(255, 255, 255);
-  font-size: 26px;
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-family: "Mukta";
-  max-width: 250px;
-  display: flex;
-  justify-content: left;
-  align-items: right;
-  position: relative;
-  margin: auto;
+ 
+
 }
 
-.project_listing {
+/*.project_listing {
   font-family: "test";
   justify-self: center;
   align-items: center;
@@ -254,7 +249,7 @@ html {
   color: azure;
 }
 
-/*.project_listing h2 {
+.project_listing h2 {
   float: left;
   color: azure;
   font-family: "Mukta";
@@ -271,17 +266,11 @@ html {
 
 .about_story {
   color: rgb(255, 255, 255);
-  font-size: 26px;
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-family: "Mukta";
-  max-width: 250px;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  position: relative;
-  margin: auto;
+
 }
 
 /*.creating {
@@ -294,82 +283,124 @@ html {
 }
 
 .text-container {
-  width: auto;
-  overflow: visible;
-  padding: 5px;
   flex-direction: row-reverse;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 20px; 
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 .text-container p {
-  /*color: azure;
-  font-size: 1em;
-  text-shadow: 1px 1px 2px #000;
-  letter-spacing: 1px;
-  font-family: "Mukta";
-  padding: 10px;
-  text-align: left;
-  display: flex;
-  flex-direction:row;*/
-  max-width: 50%;
+  width: 40%;
   color: azure;
   text-shadow: 1px 1px 2px #000;
   letter-spacing: 1px;
   font-family: "Mukta";
-  justify-content: right;
+  justify-content: center;
   text-align: left;
-  padding: 5px;
   display: flex;
   flex-direction: row;
   font-size: 1.4em;
   font-weight: 450;
-  flex-grow: 2;
+  flex: 1 1 auto;
 }
 
 .text-container img {
-  float: left;
-  margin: auto;
   height: auto;
-  max-width: 35%;
-  flex-grow: 1;
+  width: 380px;
+  max-width: 100%;
+  flex: 1 1 auto;
+  justify-content: center;
+  display: block; 
+  margin: 0 auto;
+  align-items: center;
+ 
 }
 
+@media (max-width: 768px) { 
+  .text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) { 
+  .text-container {
+    padding: 0 10px; 
+  }
+  .text-container img,
+  .text-container p {
+    flex: none; 
+    width: 100%; 
+  }
+
+  .text-container img {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) { 
+  .about-text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) { 
+  .about-text-container {
+    padding: 0 10px; 
+  }
+  .about-text-container img,
+  .about-text-container p {
+    flex: none; 
+    width: 100%; 
+  }
+
+  .about-text-container img {
+    margin-bottom: 10px;
+  }
+}
+
+
 .about-text-container {
-  width: auto;
-  overflow: visible;
-  padding: 5px;
   flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 20px; 
+  margin: 0 auto;
+  max-width: 80%;
 }
 
 .about-text-container img {
-  float: left;
-  margin: auto;
   height: auto;
-  max-width: 35%;
-  flex-grow: 1;
+  width: 380px;
+  max-width: 100%;
+  flex: 1 1 auto;
+  justify-content: center;
+  display: block; 
+  margin: 0 auto;
+  align-items: center;
 }
 
 .about-text-container p {
-  max-width: 50%;
+  width: 40%;
   color: azure;
   text-shadow: 1px 1px 2px #000;
   letter-spacing: 1px;
   font-family: "Mukta";
-  justify-content: left;
+  justify-content: center;
   text-align: left;
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
+
   font-size: 1.4em;
   font-weight: 450;
-  flex-grow: 2;
+  flex: 1 1 auto;
 }
 
 .home_heading h1 {
