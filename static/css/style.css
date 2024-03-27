@@ -183,11 +183,11 @@ html {
 }
 
 #prev {
-  left: 25%;
+  left: 40%;
 }
 
 #next {
-  right: 25%;
+  right: 40%;
 }
 
 .btn:hover {
@@ -244,13 +244,12 @@ html {
   align-items: right;
   position: relative;
   margin: auto;
-
 }
 
 .project_listing {
   font-family: "test";
   justify-self: center;
-  align-items:center;
+  align-items: center;
   margin: auto;
   color: azure;
 }
@@ -296,14 +295,16 @@ html {
 
 .text-container {
   width: auto;
-  overflow: hidden;
+  overflow: visible;
   padding: 5px;
   flex-direction: row-reverse;
-  display:flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .text-container p {
-
   /*color: azure;
   font-size: 1em;
   text-shadow: 1px 1px 2px #000;
@@ -325,30 +326,34 @@ html {
   flex-direction: row;
   font-size: 1.4em;
   font-weight: 450;
-  
+  flex-grow: 2;
 }
 
 .text-container img {
-  float: left; 
-  margin: auto; 
-  height: auto; 
-  max-width: 500px;
+  float: left;
+  margin: auto;
+  height: auto;
+  max-width: 35%;
+  flex-grow: 1;
 }
 
 .about-text-container {
   width: auto;
-  overflow: hidden;
+  overflow: visible;
   padding: 5px;
   flex-direction: row;
-  display:flex;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about-text-container img {
-  float: left; 
-  margin: auto; 
-  height: auto; 
-  max-width: 460px;
+  float: left;
+  margin: auto;
+  height: auto;
+  max-width: 35%;
+  flex-grow: 1;
 }
 
 .about-text-container p {
@@ -364,7 +369,7 @@ html {
   flex-direction: row;
   font-size: 1.4em;
   font-weight: 450;
- 
+  flex-grow: 2;
 }
 
 .home_heading h1 {
@@ -556,7 +561,6 @@ html {
   font-family: "Bayon";
 }
 
-
 .contact_info {
   list-style-type: none;
   color: azure;
@@ -576,8 +580,6 @@ html {
   color: darkorange;
   text-decoration: underline;
 }
-
-
 
 /*.home_head {
   display: flex;
