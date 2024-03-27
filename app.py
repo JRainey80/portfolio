@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, url_for
+import os
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'mysecret'
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev_key')
 
 
 
