@@ -164,33 +164,34 @@ html {
 }
 
 .btn-container {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   width: 100%;
-  align-items: flex-start;
+  align-items: center;
+  margin-top: 460px;
 }
 
 .btn {
   position: absolute;
-  background: cadetblue;
   color: azure;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
-  justify-content: flex-start;
   font-family: "Mukta";
+  font-size: 30px;
+  background: transparent;
+  font-weight: bolder;
 }
 
 #prev {
-  left: 9%;
+  left: 25%;
 }
 
 #next {
-  right: 9%;
+  right: 25%;
 }
 
 .btn:hover {
-  filter: brightness(1.5);
+  color: darkorange;
 }
 
 .image-container span:nth-child(1) {
@@ -214,6 +215,14 @@ html {
 .image-container span:nth-child(7) {
   --i: 6;
 }
+
+.home_heading h1 {
+  text-align: center;
+  color: azure;
+  font-size: 50px;
+  font-family: "Federo";
+  position: sticky;
+}
 .project_heading h1 {
   text-align: center;
   color: azure;
@@ -222,26 +231,140 @@ html {
   width: 100%;
 }
 
+.projects_story {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  text-shadow: 1px 1px 2px #000;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  max-width: 250px;
+  display: flex;
+  justify-content: left;
+  align-items: right;
+  position: relative;
+  margin: auto;
+
+}
+
 .project_listing {
   font-family: "test";
   justify-self: center;
-  align-items: center;
+  align-items:center;
   margin: auto;
   color: azure;
 }
 
-.project_listing h2 {
-  text-align: left;
+/*.project_listing h2 {
+  float: left;
   color: azure;
   font-family: "Mukta";
-  margin-left: 20px;
-}
+  text-align: left;
+  
+}*/
 
 .about_heading h1 {
   text-align: center;
   color: azure;
   font-size: 50px;
   font-family: "Federo";
+}
+
+.about_story {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  text-shadow: 1px 1px 2px #000;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  max-width: 250px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: relative;
+  margin: auto;
+}
+
+/*.creating {
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+
+.Cell {
+  color: rgb(255, 255, 255);
+}
+
+.text-container {
+  width: auto;
+  overflow: hidden;
+  padding: 5px;
+  flex-direction: row-reverse;
+  display:flex;
+}
+
+.text-container p {
+
+  /*color: azure;
+  font-size: 1em;
+  text-shadow: 1px 1px 2px #000;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction:row;*/
+  max-width: 50%;
+  color: azure;
+  text-shadow: 1px 1px 2px #000;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  justify-content: right;
+  text-align: left;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4em;
+  font-weight: 450;
+  
+}
+
+.text-container img {
+  float: left; 
+  margin: auto; 
+  height: auto; 
+  max-width: 500px;
+}
+
+.about-text-container {
+  width: auto;
+  overflow: hidden;
+  padding: 5px;
+  flex-direction: row;
+  display:flex;
+
+}
+
+.about-text-container img {
+  float: left; 
+  margin: auto; 
+  height: auto; 
+  max-width: 460px;
+}
+
+.about-text-container p {
+  max-width: 50%;
+  color: azure;
+  text-shadow: 1px 1px 2px #000;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  justify-content: left;
+  text-align: left;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4em;
+  font-weight: 450;
+ 
 }
 
 .home_heading h1 {
@@ -433,20 +556,6 @@ html {
   font-family: "Bayon";
 }
 
-.about_story {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  text-shadow: 1px 1px 2px #000;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  font-family: "Mukta";
-  max-width: 800px;
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  position: relative;
-  margin: auto;
-}
 
 .contact_info {
   list-style-type: none;
@@ -468,85 +577,7 @@ html {
   text-decoration: underline;
 }
 
-.creating {
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.Cell {
-  color: rgb(255, 255, 255);
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: "p img";
-  margin: auto;
-}
-
-.grid-container p {
-  max-width: 90%;
-  color: azure;
-  font-size: 23px;
-  text-shadow: 1px 1px 2px #000;
-  letter-spacing: 1px;
-  font-family: "Mukta";
-  grid-column: 1 / 2;
-  grid-row: 1 / 1;
-  justify-content: left;
-  text-align: left;
-  text-wrap: pretty;
-  padding: 10px;
-  font-weight: 400;
-}
-
-.grid-container img {
-  max-width: 90%;
-  height: auto;
-  grid-gap: 20px;
-  grid-column: 2 / 2;
-  grid-row: 1 / 1;
-  justify-self: center;
-  position: relative;
-  padding: 10px;
-}
-
-.about-grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  grid-template-areas: "img p";
-  margin: auto;
-}
-
-.about-grid-container img {
-  max-width: 90%;
-  height: auto;
-  grid-gap: 20px;
-  grid-column: 1 / 2;
-  grid-row: 1 / 1;
-  justify-self: center;
-  position: relative;
-  padding: 10px;
-}
-
-.about-grid-container p {
-  max-width: 90%;
-  color: azure;
-  font-size: 20px;
-  text-shadow: 1px 1px 2px #000;
-  letter-spacing: 1px;
-  font-family: "Mukta";
-  grid-column: 2 / 2;
-  grid-row: 1 / 1;
-  justify-content: left;
-  text-align: left;
-  text-wrap: balance;
-  padding: 10px;
-  font-size: x-large;
-  font-weight: 400;
-}
 
 /*.home_head {
   display: flex;

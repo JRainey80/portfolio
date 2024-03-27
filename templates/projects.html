@@ -2,33 +2,19 @@
 <header class="project_heading">
   <h1>So Far</h1>
 </header>
-<div class="project_listing">
-  <h2>This Site:</h2>
-  <div class="grid-container">
-    <p>
-      Building this website has been an incredibly rewarding learning
-      experience. I started by deepening my understanding of Python, going
-      beyond what I learned in school to get a real grasp on control flow logic
-      and refining my syntax. After that, I chose to learn Flask because it
-      seemed like the right fit for creating a straightforward, static site with
-      just the basics on the backend. Once I felt comfortable with Flask, I
-      moved on to brush up on my CSS and HTML skills to get the website looking
-      just right. To keep my work organized across my Linux VM and Windows PC, I
-      set up GitHub for effective code management. Throughout this project, I
-      turned to various resources like Google, YouTube, and ChatGPT for
-      guidance, piecing everything together and really enjoying the process. The
-      goal wasn't just to have a website to show off my projects and personal
-      brand; I also wanted to lay a strong foundation for future developments.
-      I'm looking forward to taking on new challenges, such as dockerizing the
-      website, hosting it on Azure, implementing CI/CD pipelines, managing logs,
-      and automating everything with Terraform.
+<!--<div class="project_listing">
+  <h2>This Site:</h2>-->
+  <div class="text-container">
+    <img src="{{url_for('static', filename='img/creating_a_site.webp') }}" style="float: right; margin-left: 20px;">
+    <p class="projects_story">
+
+      Creating this website has been a fulfilling journey of learning, starting with enhancing my Python skills, adopting Flask for its suitability for simple, static sites, and polishing my CSS and HTML knowledge for better visual appeal. I managed my code across Linux and Windows using GitHub. More than just displaying my projects and brand, this endeavor aimed to establish a solid foundation for ambitious future projects, including website dockerization, Azure deployment, CI/CD pipeline integration, and comprehensive automation with Terraform.    
     </p>
-    <img class="creating" src="{{url_for("static",
-    filename='/img/creating_a_site.webp') }}">
+    
     <!--<video class="me_vid_one" width="320" height="240" controls>
       <source src="{{url_for("static", filename='null') }}" type="video/mp4">
     </video>-->
   </div>
-</div>
+<!--</div>-->
 
 {% endblock %}
