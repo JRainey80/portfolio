@@ -12,7 +12,8 @@ nav_items = [
     {'name': 'Home', 'url':'/'},
     {'name': 'About', 'url': '/about'},
     {'name': 'Projects', 'url': '/projects'},
-    {'name': 'Connect', 'url': '/connect'}
+    {'name': 'Connect', 'url': '/connect'},
+    {'name': 'Resume', 'url': 'https://raineyresume.z13.web.core.windows.net/'}
 ]
 
 
@@ -32,6 +33,7 @@ def connect():
 @app.route("/projects", methods=["GET"])
 def projects():
     return render_template("projects.html", nav_items=nav_items)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
