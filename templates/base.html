@@ -21,7 +21,7 @@
       <nav class="nav-bar">
         
             {% for item in nav_items %}
-            <a href="{{ item.url }}" class="nav-link">{{ item.name }}</a>
+            <a href="{{ item.url }}" class="nav-link"{% if 'target' in item %} target="{{ item.target }}" {% endif %} {% if 'rel' in item %} rel="{{ item.rel }}" {% endif %}>{{ item.name }}</a>
             {% endfor %} 
       </nav> 
         
