@@ -13,7 +13,7 @@ nav_items = [
     {'name': 'About', 'url': '/about'},
     {'name': 'Projects', 'url': '/projects'},
     {'name': 'Connect', 'url': '/connect'},
-    {'name': 'Resume', 'url': 'https://raineyresume.z13.web.core.windows.net/', 'target': '_blank', 'rel': 'noopener noreferrer'}
+    {'name': 'Resume', 'url': 'https://resume.rainey-cloud.com/', 'target': '_blank', 'rel': 'noopener noreferrer'}
 ]
 
 
