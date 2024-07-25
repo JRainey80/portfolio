@@ -49,4 +49,4 @@ jobs:
         app-name: 'Justin-Rainey-Portfolio'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_c85b50bb9db343659e7d8e32ba34fedb }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_b6be476d789342aa8de8effe80345b07 }}/magneto80/rainey_cloud:${{ github.sha }}'
+        images: '${{ secrets.AzureAppService_ContainerUsername_b6be476d789342aa8de8effe80345b07 }}/rainey_cloud:${{ github.sha }}'
