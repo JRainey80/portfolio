@@ -2,7 +2,9 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions.
 
 name: Build and deploy container app to Azure Web App - Justin-Rainey-Portfolio
-
+permissions:
+  contents: read
+  packages: write
 on:
   push:
     branches:
