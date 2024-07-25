@@ -31,7 +31,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_b6be476d789342aa8de8effe80345b07 }}/magneto80/rainey_cloud:${{ github.sha }}
+        tags: ${{ secrets.AzureAppService_ContainerUsername_b6be476d789342aa8de8effe80345b07 }}/rainey_cloud:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
