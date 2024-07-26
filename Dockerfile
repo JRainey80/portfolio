@@ -10,6 +10,4 @@ EXPOSE 80
 
 ENV FLASK_ENV=production
 
-COPY ./app.py /app
-
 CMD ["flask", "run", "--host=0.0.0.0", "--port=80"]
