@@ -3,9 +3,9 @@
 
 name: Build and deploy container app to Azure Web App - Justin-Rainey-Portfolio
 
-on:
-  push:
-    branches:
+#on:
+  #push:
+    #branches:
       - main
   workflow_dispatch:
 
