@@ -43,6 +43,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
+      name: 'Justin-Rainey-Portfolio'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
