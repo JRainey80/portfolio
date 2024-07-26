@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}/magneto80/rainey_cloud:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}/magneto80/rainey_cloud:latest
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'Justin-Rainey-Portfolio'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_c8d7290a5d074fad91b2fb8883ec72d5 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}/magneto80/rainey_cloud:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}/magneto80/rainey_cloud:latest'
