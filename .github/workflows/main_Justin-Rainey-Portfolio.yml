@@ -26,14 +26,14 @@ jobs:
         username: ${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}
         password: ${{ secrets.AzureAppService_ContainerPassword_a35f9647a30e48f29466c3e2ac2a8813 }}
 
-   - name: Build and push container image to registry
-  uses: docker/build-push-action@v3
-  with:
-    push: true
-    tags: |
-      index.docker.io/${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}/magneto80/rainey_cloud:latest 
-      index.docker.io/${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}/magneto80/rainey_cloud:${{ github.sha }} 
-    file: ./Dockerfile
+    - name: Build and push container image to registry
+      uses: docker/build-push-action@v3
+      with:
+        push: true
+        tags: |
+          index.docker.io/${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}/magneto80/rainey_cloud:latest 
+          index.docker.io/${{ secrets.AzureAppService_ContainerUsername_31757f6c50694cc0bc2b8f53837708bf }}/magneto80/rainey_cloud:${{ github.sha }} 
+        file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
