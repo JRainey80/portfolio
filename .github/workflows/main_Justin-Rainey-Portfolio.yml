@@ -15,7 +15,8 @@ permissions:
 jobs:
   build:
     runs-on: 'ubuntu-latest'
-
+    permissions:
+        deployments: read|write|none
     steps:
     - uses: actions/checkout@v2
 
