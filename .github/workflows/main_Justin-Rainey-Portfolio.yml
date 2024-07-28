@@ -35,7 +35,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: magneto80/rainey_cloud:latest
+        tags: latest
         file: ./Dockerfile
 
   deploy:
