@@ -239,6 +239,14 @@ html {
   font-family: "Mukta";
 }
 
+.projects_story_2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #000;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+}
+
 /*.project_listing {
   font-family: "test";
   justify-self: center;

@@ -5,24 +5,25 @@
 <!--<div class="project_listing">
   <h2>This Site:</h2>-->
 <div class="text-container">
-  <img
-    src="{{url_for('static', filename='img/creating_a_site.webp') }}"
-    style="margin-right: 10px"
-  />
+  <img src="{{url_for('static', filename='img/creating_a_site.webp') }}" style="margin-right: 10px" />
   <p class="projects_story">
-    Creating this website has been a fulfilling journey of learning. 
-    It began with enhancing my Python skills, adopting Flask for its 
-    suitability for simple, static sites, and polishing my CSS and 
+    Creating this website has been a fulfilling journey of learning.
+    It began with enhancing my Python skills, adopting Flask for its
+    suitability for simple, static sites, and polishing my CSS and
     HTML knowledge for better visual appeal. I managed the code across
-    Linux and Windows devices and host the site on Azure Web Apps in a 
-    Docker container. A CI/CD pipeline, triggered on push to the main 
-    branch, pushes the new image to Docker Registry, and then deploys to Azure.  
+    Linux and Windows devices and host the site on Azure Web Apps in a
+    Docker container. A CI/CD pipeline, triggered on push to the main
+    branch, pushes the new image to Docker Registry, and then deploys to Azure.
   </p>
-
-  <!--<video class="me_vid_one" width="320" height="240" controls>
-      <source src="{{url_for("static", filename='null') }}" type="video/mp4">
-    </video>-->
-</div>
-<!--</div>-->
+</div class="text-container">
+<img src="{{url_for('static', filename='img/CRC.webp') }}" style="margin-right: 10px" />
+<p class="projects_story_2">
+  My resume hosted on Azure blob storage as a static site. The front end is a
+  simple HTML/CSS version of my resume. JavaScript provides an interactive visitor
+  counter. The backend consists of a Python script working as an API via an Azure Function
+  App. A CosmosDB Table keeps the visitor count. Front/Back ends have git repos with
+  respective Github Actions pipelines for deployment. All resources are configured and
+  managed with Terraform
+</p>
 
 {% endblock %}
