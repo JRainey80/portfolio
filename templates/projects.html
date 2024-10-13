@@ -15,18 +15,24 @@
     Docker container. A CI/CD pipeline, triggered on push to the main
     branch, pushes the new image to Docker Registry, and then deploys to Azure.
   </p>
+  
 </div>
 
 
 <div class="text-container">
   <p class="projects_story_2">
-  My resume hosted on Azure blob storage as a static site. The front end is a
-  simple HTML/CSS version of my resume. JavaScript provides an interactive visitor
-  counter. The backend consists of a Python script working as an API via an Azure Function
-  App. A CosmosDB Table keeps the visitor count. Front/Back ends have git repos with
-  respective Github Actions pipelines for deployment. All resources are configured and
-  managed with Terraform
+  Created a fully automated, serverless resume site hosted on Azure Blob 
+  Storage. The site features a real-time visit counter powered by an Azure 
+  Function App and CosmosDB Table, with all infrastructure managed using 
+  Terraform. CI/CD pipelines with GitHub Actions ensure seamless updates for 
+  both the frontend and backend. This project demonstrates advanced use of 
+  cloud services and DevOps tools for scalable and efficient deployment.
   </p>
+  <a
+      href="https://resume.rainey-cloud.com"
+      target="_blank"
+      rel="noopener noreferrer">Resume</a>
+
   <img src="{{url_for('static', filename='img/CRC.webp') }}" style="margin-right: 10px" />
 </div>
 
