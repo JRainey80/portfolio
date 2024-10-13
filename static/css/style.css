@@ -237,6 +237,7 @@ html {
   word-spacing: 2px;
   letter-spacing: 1px;
   font-family: "Mukta";
+  padding: 0 20px;
 }
 
 .projects_story_2 {
@@ -245,6 +246,7 @@ html {
   word-spacing: 2px;
   letter-spacing: 1px;
   font-family: "Mukta";
+  padding: 0 20px;
 }
 
 /*.project_listing {
@@ -311,6 +313,7 @@ html {
   font-size: 1.4em;
   font-weight: 450;
   flex: 1 1 auto;
+  padding: 0 20px;
 }
 
 .text-container img {
@@ -323,6 +326,7 @@ html {
   margin: 0 auto;
   align-items: center;
   border-radius: 10px;
+  padding: 0 20px;
 }
 
 @media (max-width: 768px) {

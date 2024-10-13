@@ -19,7 +19,6 @@
 
 
 <div class="text-container">
-  <img src="{{url_for('static', filename='img/CRC.webp') }}" style="margin-right: 10px" />
   <p class="projects_story_2">
   My resume hosted on Azure blob storage as a static site. The front end is a
   simple HTML/CSS version of my resume. JavaScript provides an interactive visitor
@@ -28,6 +27,7 @@
   respective Github Actions pipelines for deployment. All resources are configured and
   managed with Terraform
   </p>
+  <img src="{{url_for('static', filename='img/CRC.webp') }}" style="margin-right: 10px" />
 </div>
 
 {% endblock %}
