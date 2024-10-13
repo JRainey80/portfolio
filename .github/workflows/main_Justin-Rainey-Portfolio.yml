@@ -59,3 +59,4 @@ jobs:
         app-name: 'Justin-Rainey-Portfolio'
         images: 'magneto80/rainey_cloud:latest'
         slot-name: 'production'
+        package: .
