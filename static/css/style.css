@@ -116,7 +116,7 @@
   a*/
 
 body {
-  margin: 0;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: normal;
@@ -129,7 +129,7 @@ body {
   background-size: cover;
   padding: 20px;
   overflow-y: scroll;
-}
+
 
 html {
   height: 100%;
