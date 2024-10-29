@@ -129,6 +129,8 @@ body {
   background-size: cover;
   padding: 20px;
   overflow-y: scroll;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
 
 
 html {
@@ -231,37 +233,73 @@ html {
   width: 100%;
 }
 
-.projects_story {
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 2px #000;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  font-family: "Mukta";
-  padding: 0 20px;
-  margin-bottom: 80px;
+/* Project Container */
+.projects_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px; /* Space between project items */
+  padding: 20px;
 }
 
-.projects_story_2 {
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 2px #000;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  font-family: "Mukta";
-  padding: 0 20px;
-  margin-bottom: 80px;
+/* Project Item */
+.project_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
 }
 
-.projects_story_2 a {
+.project_item:nth-child(odd) {
+  grid-template-columns: 1fr 1fr;
+}
+
+.project_item:nth-child(even) {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl; /* Reverses the order of elements */
+}
+
+.project_item p {
+  grid-column: 1 / 2;
+}
+
+.project_item img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+/* Project Image */
+.project_image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Background Styling */
+
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: no-repeat;
+
+
+/* Project Heading */
+.project_heading h1 {
+  text-align: center;
   color: azure;
-  font-size: 23px;
-  text-align: right;
-  font-family: "Bayon";
+  font-size: 50px;
+  font-family: "Federo";
+  margin-bottom: 20px;
 }
 
-.projects_story_2 a:hover {
-  color: darkorange;
-  text-decoration: underline;
+/* Text Styling */
+.projects_story, .projects_story_2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #000;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  padding: 0 20px;
+  margin-bottom: 0;
 }
+
 /*.project_listing {
   font-family: "test";
   justify-self: center;
@@ -302,7 +340,7 @@ html {
   color: rgb(255, 255, 255);
 }
 
-.text-container {
+/*.text-container {
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -341,7 +379,7 @@ html {
   border-radius: 10px;
   padding: 0 20px;
 }
-
+*/
 @media (max-width: 768px) {
   .text-container {
     flex-direction: column;
