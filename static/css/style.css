@@ -265,7 +265,7 @@ html {
   color: darkorange;
   text-decoration: underline;
 }
-/*.project_listing {
+.project_listing {
   font-family: "test";
   justify-self: center;
   align-items: center;
@@ -279,7 +279,7 @@ html {
   font-family: "Mukta";
   text-align: left;
   
-}*/
+}
 
 .about_heading h1 {
   text-align: center;
