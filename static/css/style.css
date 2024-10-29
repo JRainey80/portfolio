@@ -250,7 +250,6 @@ html {
 /* Individual Project Items */
 .project_item {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 20px;
   max-width: 100%;
@@ -259,6 +258,10 @@ html {
 
 .project_item:nth-child(even) {
   flex-direction: row-reverse; /* Alternating layout */
+}
+
+.project_item:nth-child(odd) {
+  flex-direction: row;
 }
 
 /* Project Images */
