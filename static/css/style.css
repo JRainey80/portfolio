@@ -251,6 +251,17 @@ html {
   margin-bottom: 80px;
 }
 
+.projects_story_2 a {
+  color: azure;
+  font-size: 23px;
+  text-align: right;
+  font-family: "Bayon";
+}
+
+.projects_story_2 a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
 /*.project_listing {
   font-family: "test";
   justify-self: center;
@@ -693,4 +704,5 @@ html {
 
 .fa-envelope:hover {
   color: rgb(214, 214, 92);
+}
 }
