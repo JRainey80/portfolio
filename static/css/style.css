@@ -226,6 +226,14 @@ html {
   font-family: "Federo";
   position: sticky;
 }
+
+.project_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 20px;
+}
+
 .project_heading h1 {
   text-align: center;
   color: azure;
@@ -234,7 +242,7 @@ html {
   width: 100%;
 }
 
-.projects_story {
+.project_story {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
@@ -244,7 +252,7 @@ html {
   margin-bottom: 80px;
 }
 
-.projects_story_2 {
+.project_story_2 {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
@@ -254,14 +262,14 @@ html {
   margin-bottom: 80px;
 }
 
-.projects_story_2 a {
+.project_story_2 a {
   color: azure;
   font-size: 23px;
   text-align: right;
   font-family: "Bayon";
 }
 
-.projects_story_2 a:hover {
+.project_story_2 a:hover {
   color: darkorange;
   text-decoration: underline;
 }
@@ -279,6 +287,47 @@ html {
   font-family: "Mukta";
   text-align: left;
   
+}
+
+.project_item {
+  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.project_item p {
+  width: 40%;
+  color: azure;
+  text-shadow: 1px 1px 2px #000;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  justify-content: center;
+  text-align: left;
+  display: flex;
+  font-size: 1.4em;
+  font-weight: 450;
+  grid-column: 1 / 2;
+  padding: 0 20px;
+}
+
+.project_image {
+  height: auto;
+  width: 493px;
+  max-width: 100%;
+  flex: 1 1 auto;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0 20px;
 }
 
 .about_heading h1 {
@@ -303,46 +352,6 @@ html {
 
 .Cell {
   color: rgb(255, 255, 255);
-}
-
-.text-container {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 80%;
-}
-
-.text-container p {
-  width: 40%;
-  color: azure;
-  text-shadow: 1px 1px 2px #000;
-  letter-spacing: 1px;
-  font-family: "Mukta";
-  justify-content: center;
-  text-align: left;
-  display: flex;
-  font-size: 1.4em;
-  font-weight: 450;
-  flex: 1 1 auto;
-  padding: 0 20px;
-}
-
-.text-container img {
-  height: auto;
-  width: 493px;
-  max-width: 100%;
-  flex: 1 1 auto;
-  justify-content: center;
-  display: block;
-  margin: 0 auto;
-  align-items: center;
-  border-radius: 10px;
-  padding: 0 20px;
 }
 
 @media (max-width: 768px) {

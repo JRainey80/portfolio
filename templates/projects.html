@@ -2,44 +2,44 @@
 <header class="project_heading">
   <h1>So Far</h1>
 </header>
-<!--<div class="project_listing">
-  <h2>This Site:</h2>-->
-<div class="projects-container">
-  <img src="{{url_for('static', filename='img/creating_a_site.webp') }}" style="margin-right: 10px" />
-  <p class="projects_story">
-    Creating this website has been a fulfilling journey of learning.
-    It began with enhancing my Python skills, adopting Flask for its
-    suitability for simple, static sites, and polishing my CSS and
-    HTML knowledge for better visual appeal. I managed the code across
-    Linux and Windows devices and host the site on Azure Web Apps in a
-    Docker container. A CI/CD pipeline, triggered on push to the main
-    branch, pushes the new image to Docker Registry, and then deploys to Azure.
-  </p>
+<div class="project_container">
+  <h2>This Site:</h2>
+  <div class="project_item">
+    <img class="project_image" src="{{url_for('static', filename='img/creating_a_site.webp') }}" style="margin-right: 10px" />
+    <p class="project_story">
+      Creating this website has been a fulfilling journey of learning.
+      It began with enhancing my Python skills, adopting Flask for its
+      suitability for simple, static sites, and polishing my CSS and
+      HTML knowledge for better visual appeal. I managed the code across
+      Linux and Windows devices and host the site on Azure Web Apps in a
+      Docker container. A CI/CD pipeline, triggered on push to the main
+      branch, pushes the new image to Docker Registry, and then deploys to Azure.
+    </p>
   
-</div>
+  </div>
 
 
-<div class="text-container">
-  <a
-      href="https://github.com/JRainey80/ResumeAPIapp.git"
-      target="_blank"
-      rel="noopener noreferrer">BackEnd</a>
-  <a
-      href="https://github.com/JRainey80/Resume.git"
-      target="_blank"
-      rel="noopener noreferrer">FrontEnd</a>
-  <p class="projects_story_2">
-    Created a serverless resume website hosted on azure blob storage, secured 
-    with custom domains for HTTPS. The site features a real-time visitor counter 
-    powered by an Azure Function App and CosmosDB Table, with infrastructure 
-    managed through Terraform. CI/CD pipelines using GitHub Actions automate 
-    deployments, and Azure Monitor and Application Insights provided observability 
-    for troubleshooting and performance tracking. 
-    Front end: Javascript, Back End: Python
-  </p>
+  <div class="project_item">
+    <a
+        href="https://github.com/JRainey80/ResumeAPIapp.git"
+        target="_blank"
+        rel="noopener noreferrer">BackEnd</a>
+    <a
+        href="https://github.com/JRainey80/Resume.git"
+        target="_blank"
+        rel="noopener noreferrer">FrontEnd</a>
+    <p class="project_story_2">
+      Created a serverless resume website hosted on azure blob storage, secured 
+      with custom domains for HTTPS. The site features a real-time visitor counter 
+      powered by an Azure Function App and CosmosDB Table, with infrastructure 
+      managed through Terraform. CI/CD pipelines using GitHub Actions automate 
+      deployments, and Azure Monitor and Application Insights provided observability 
+      for troubleshooting and performance tracking. 
+      Front end: Javascript, Back End: Python
+    </p>
   
 
-  <img src="{{url_for('static', filename='img/CRC.webp') }}" style="margin-right: 10px" />
+    <img class="project_image" src="{{url_for('static', filename='img/CRC.webp') }}" style="margin-right: 10px" />
+  </div>
 </div>
-
 {% endblock %}
