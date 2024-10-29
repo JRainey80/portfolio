@@ -227,7 +227,85 @@ html {
   position: sticky;
 }
 
+/* Main Project Container */
 .project_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust to your preferred width */
+}
+
+/* Project Heading */
+.project_heading h1 {
+  text-align: center;
+  color: azure;
+  font-size: 50px;
+  font-family: "Federo";
+  margin: 20px 0;
+}
+
+/* Individual Project Items */
+.project_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.project_item:nth-child(even) {
+  flex-direction: row-reverse; /* Alternating layout */
+}
+
+/* Project Images */
+.project_image {
+  width: 45%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* Project Story Text */
+.project_story, .project_story_2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #000;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  padding: 0 20px;
+  margin: 0;
+  width: 55%;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+/* Project Links */
+.project_story_2 a {
+  color: azure;
+  font-size: 20px;
+  font-family: "Bayon";
+  margin-right: 10px;
+}
+
+.project_story_2 a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
+
+/* Center H2 Heading */
+.project_listing h2 {
+  color: azure;
+  font-family: "Mukta";
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*.project_container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
@@ -329,6 +407,7 @@ html {
   border-radius: 10px;
   padding: 0 20px;
 }
+*/
 
 .about_heading h1 {
   text-align: center;
