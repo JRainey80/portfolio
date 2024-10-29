@@ -133,6 +133,7 @@ body {
   background-repeat: no-repeat;
 
 
+
 html {
   height: 100%;
 }
@@ -233,73 +234,37 @@ html {
   width: 100%;
 }
 
-/* Project Container */
-.projects_container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px; /* Space between project items */
-  padding: 20px;
-}
-
-/* Project Item */
-.project_item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 20px;
-}
-
-.project_item:nth-child(odd) {
-  grid-template-columns: 1fr 1fr;
-}
-
-.project_item:nth-child(even) {
-  grid-template-columns: 1fr 1fr;
-  direction: rtl; /* Reverses the order of elements */
-}
-
-.project_item p {
-  grid-column: 1 / 2;
-}
-
-.project_item img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 8px;
-}
-
-/* Project Image */
-.project_image {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-/* Background Styling */
-
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
-  background-repeat: no-repeat;
-
-
-/* Project Heading */
-.project_heading h1 {
-  text-align: center;
-  color: azure;
-  font-size: 50px;
-  font-family: "Federo";
-  margin-bottom: 20px;
-}
-
-/* Text Styling */
-.projects_story, .projects_story_2 {
+.projects_story {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
   letter-spacing: 1px;
   font-family: "Mukta";
   padding: 0 20px;
-  margin-bottom: 0;
+  margin-bottom: 80px;
 }
 
+.projects_story_2 {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px #000;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-family: "Mukta";
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
+.projects_story_2 a {
+  color: azure;
+  font-size: 23px;
+  text-align: right;
+  font-family: "Bayon";
+}
+
+.projects_story_2 a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
 /*.project_listing {
   font-family: "test";
   justify-self: center;
@@ -340,7 +305,7 @@ html {
   color: rgb(255, 255, 255);
 }
 
-/*.text-container {
+.text-container {
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -379,7 +344,7 @@ html {
   border-radius: 10px;
   padding: 0 20px;
 }
-*/
+
 @media (max-width: 768px) {
   .text-container {
     flex-direction: column;
