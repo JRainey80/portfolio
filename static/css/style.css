@@ -268,10 +268,8 @@ html {
 .project_image {
   height: auto;
   width: 400px;
-  max-width: 100%;
-  flex: 1 1 auto;
+  max-width: 80%;
   justify-content: center;
-  display: block;
   margin: 0 auto;
   align-items: center;
   border-radius: 10px;
