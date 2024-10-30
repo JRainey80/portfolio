@@ -251,14 +251,14 @@ html {
 .project_item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   max-width: 100%;
-  padding: 20px;
+  padding: 10px;
   flex-wrap: wrap;
 }
 
 .project_item:nth-child(even) {
-  flex-direction: row-reverse; 
+  flex-direction: row; 
 }
 
 /* Project Images */
@@ -279,9 +279,9 @@ html {
   word-spacing: 2px;
   letter-spacing: 1px;
   font-family: "Mukta";
-  padding: 0 20px;
+  padding: 0 10px;
   margin: 0;
-  width: 40%;
+  width: 45%;
   text-align: left;
   font-size: 1.2em;
 }
