@@ -254,6 +254,7 @@ html {
   gap: 20px;
   max-width: 100%;
   padding: 20px;
+  flex-wrap: wrap;
 }
 
 .project_item:nth-child(even) {
@@ -318,13 +319,15 @@ html {
 
   .project_image {
     max-width: 100%;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
+    width: auto;
   }
 
   .project_story, .project_story_2 {
     width: 100%;
     text-align: center;
     font-size: 1em; /* Adjust font size for readability */
+    padding: 0 15px;
   }
 }
 
@@ -332,6 +335,10 @@ html {
 @media (max-width: 480px) {
   .project_container {
     padding: 10px;
+  }
+  
+   .project_item {
+    flex-direction: column;
   }
 
   .project_image {
@@ -342,6 +349,13 @@ html {
   .project_story, .project_story_2 {
     font-size: 0.9em;
     padding: 0 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .project_story_2 a {
+    display: block; /* Make links stack vertically */
+    margin-bottom: 10px;
   }
 }
 
