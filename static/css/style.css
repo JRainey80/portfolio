@@ -258,11 +258,7 @@ html {
 }
 
 .project_item:nth-child(even) {
-  flex-direction: row-reverse; /* Alternating layout */
-}
-
-.project_item:nth-child(odd) {
-  flex-direction: row;
+  flex-direction: row-reverse; 
 }
 
 /* Project Images */
