@@ -270,7 +270,8 @@ body.page-specific {
 
   .project_image {
     width: 80%;
-    max-width: 300px;
+    max-width: 260px;
+    height: auto;
     margin: 0 auto;
   }
 
