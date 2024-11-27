@@ -257,10 +257,6 @@ html {
   flex-wrap: wrap;
 }
 
-.project_item:nth-child(even) {
-  flex-direction: row; 
-}
-
 /* Project Images */
 .project_image {
   height: auto;
