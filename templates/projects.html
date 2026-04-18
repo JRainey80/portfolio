@@ -4,18 +4,24 @@
 </header>
 
 <div class="project_container">
-  <!-- Project 1 -->
-  <div class="project_item">
-    <img class="project_image" src="{{url_for('static', filename='img/creating_a_site.webp') }}" alt="Creating a Site">
-    <p class="project_story">
-      Creating this website has been a fulfilling journey of learning.
-      It began with enhancing my Python skills, adopting Flask for its
-      suitability for simple, static sites, and polishing my CSS and
-      HTML knowledge for better visual appeal. I managed the code across
-      Linux and Windows devices and host the site on Azure Web Apps in a
-      Docker container. A CI/CD pipeline, triggered on push to the main
-      branch, pushes the new image to Docker Registry, and then deploys to Azure.
-    </p>
+
+    <!-- Project 3 -->
+    <div class="project_item">
+      <p class="project_story_3">
+        <a href="https://www.kubecraft.dev/" target="_blank" rel="noopener noreferrer">KubeCraft</a>
+        <a href="https://github.com/JRainey80/Lab#" target="_blank" rel="noopener noreferrer">Current Build: Homelab/Proxmox/KubeCraft</a>
+        Built a 3-node Proxmox homelab from the ground up to support ongoing work in 
+        KubeCraft, a Kubernetes-focused program centered on hands-on DevOps and cloud engineering. 
+        The lab required hardware installation, networking, virtualization, and cluster
+        configuration, creating a realistic environment for building and testing infrastructure projects. 
+        Within this setup, worked extensively with Docker, Linux administration, and system-level 
+        configuration, including building an Arch Linux machine from scratch with full disk encryption 
+        and manually configured services. This project reflects a strong foundation in the core technologies 
+        behind Kubernetes and cloud-native systems, with current work focused on applying that foundation 
+        toward Kubernetes cluster deployment, orchestration, and workload management in a self-hosted environment.
+      </p>
+      <img class="project_image" src="{{url_for('static', filename='img/Homelab project image.png') }}" alt="Resume API Project">
+    </div>
   </div>
 
   <!-- Project 2 -->
@@ -34,6 +40,21 @@
     <img class="project_image" src="{{url_for('static', filename='img/CRC.webp') }}" alt="Resume API Project">
   </div>
 </div>
+
+  <!-- Project 1 -->
+  <div class="project_item">
+    <img class="project_image" src="{{url_for('static', filename='img/creating_a_site.webp') }}" alt="Creating a Site">
+    <p class="project_story">
+      Creating this website has been a fulfilling journey of learning.
+      It began with enhancing my Python skills, adopting Flask for its
+      suitability for simple, static sites, and polishing my CSS and
+      HTML knowledge for better visual appeal. I managed the code across
+      Linux and Windows devices and host the site on Azure Web Apps in a
+      Docker container. A CI/CD pipeline, triggered on push to the main
+      branch, pushes the new image to Docker Registry, and then deploys to Azure.
+    </p>
+  </div>
+
 
 <!--<header class="project_heading">
   <h1>So Far</h1>

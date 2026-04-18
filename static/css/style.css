@@ -269,7 +269,7 @@ html {
 }
 
 /* Project Story Text */
-.project_story, .project_story_2 {
+.project_story, .project_story_2, .project_story_3 {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
@@ -295,6 +295,18 @@ html {
   text-decoration: underline;
 }
 
+.project_story_3 a {
+  color: azure;
+  font-size: 20px;
+  font-family: "Bayon";
+  margin-right: 10px;
+}
+
+.project_story_3 a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
+
 /* Center H2 Heading */
 .project_listing h2 {
   color: azure;
@@ -315,7 +327,7 @@ html {
     width: auto;
   }
 
-  .project_story, .project_story_2 {
+  .project_story, .project_story_2, .project_story_3 {
     width: 100%;
     text-align: center;
     font-size: 1em; /* Adjust font size for readability */
@@ -338,7 +350,7 @@ html {
     margin-bottom: 10px;
   }
 
-  .project_story, .project_story_2 {
+  .project_story, .project_story_2, .project_story_3 {
     font-size: 0.9em;
     padding: 0 10px;
     width: 100%;
