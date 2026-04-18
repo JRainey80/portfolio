@@ -340,15 +340,15 @@ html {
 /* Mobile responsiveness for screens less than 480px */
 @media (max-width: 480px) {
   .project_container {
-    padding: 10px;
+    max-width: 1400px;
   }
 
   .project_item {
     display: flex;
     align-items: center;
-    gap: 20px;
-    max-width: 100%;
-    padding: 10px;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
     flex-wrap: wrap;
   }
 
@@ -364,10 +364,16 @@ html {
   }
 
   .project_story, .project_story_2, .project_story_3 {
-    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px #000;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-family: "Mukta";
     padding: 0 10px;
-    width: 100%;
-    text-align: center;
+    margin: 0;
+    width: 500px;
+    text-align: left;
+    font-size: 1.2em;
   }
 
   .project_story_2 a {
