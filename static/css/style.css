@@ -342,14 +342,25 @@ html {
   .project_container {
     padding: 10px;
   }
-  
-   .project_item {
-    flex-direction: column;
+
+  .project_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
   }
 
   .project_image {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 500px;
+    max-width: 100%;
+    height: 320px;
+    object-fit: cover;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    border-radius: 10px;
   }
 
   .project_story, .project_story_2, .project_story_3 {
@@ -858,4 +869,4 @@ html {
 .fa-envelope:hover {
   color: rgb(214, 214, 92);
 }
-}
+
