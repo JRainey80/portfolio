@@ -235,7 +235,7 @@ html {
   gap: 40px;
   padding: 20px;
   margin: 0 auto;
-  max-width: 1800px; /* Adjust to your preferred width */
+  max-width: 1500px;
 }
 
 /* Project Heading */
@@ -252,27 +252,28 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  max-width: 1200px;
+  gap: 32px;
   width: 100%;
-  padding: 10px;
-  flex-wrap: wrap;
+  max-width: 1400px;
+  padding: 10px 20px;
+  flex-wrap: nowrap;
 }
 
 /* Project Images */
 .project_image {
-  width: 660px;
-  max-width: 100%;
-  height: 400px;
+  width: 620px;
+  height: 360px;
+  flex: 0 0 620px;
   object-fit: cover;
-  justify-content: center;
-  margin: 0 auto;
-  align-items: center;
+  display: block;
+  margin: 0;
   border-radius: 10px;
 }
 
 /* Project Story Text */
-.project_story, .project_story_2, .project_story_3 {
+.project_story,
+.project_story_2,
+.project_story_3 {
   color: rgb(255, 255, 255);
   text-shadow: 1px 1px 2px #000;
   word-spacing: 2px;
@@ -280,24 +281,14 @@ html {
   font-family: "Mukta";
   padding: 0 10px;
   margin: 0;
-  width: 45%;
+  flex: 1 1 0;
+  max-width: 520px;
   text-align: left;
   font-size: 1.2em;
 }
 
 /* Project Links */
-.project_story_2 a {
-  color: azure;
-  font-size: 20px;
-  font-family: "Bayon";
-  margin-right: 10px;
-}
-
-.project_story_2 a:hover {
-  color: darkorange;
-  text-decoration: underline;
-}
-
+.project_story_2 a,
 .project_story_3 a {
   color: azure;
   font-size: 20px;
@@ -305,6 +296,7 @@ html {
   margin-right: 10px;
 }
 
+.project_story_2 a:hover,
 .project_story_3 a:hover {
   color: darkorange;
   text-decoration: underline;
@@ -317,74 +309,66 @@ html {
   text-align: center;
   margin-bottom: 20px;
 }
-  /* Mobile responsiveness for screens less than 768px */
-@media (max-width: 768px) {
+
+/* Tablet and mobile */
+@media (max-width: 900px) {
   .project_item {
-    flex-direction: column; /* Stack images and text vertically */
+    flex-direction: column;
     align-items: center;
+    gap: 18px;
+    flex-wrap: nowrap;
   }
 
   .project_image {
     width: 100%;
+    max-width: 620px;
     height: auto;
-    max-width: 100%;
-    margin: 0 auto 15px auto;
+    flex: none;
+    margin: 0 auto;
   }
 
-  .project_story, .project_story_2, .project_story_3 {
+  .project_story,
+  .project_story_2,
+  .project_story_3 {
     width: 100%;
-    max-width: 100%;
-    min-width: 0;
+    max-width: 700px;
     text-align: center;
     font-size: 1em;
     padding: 0 15px;
   }
 }
 
-/* Mobile responsiveness for screens less than 480px */
+/* Small mobile */
 @media (max-width: 480px) {
   .project_container {
-    max-width: 1400px;
+    padding: 10px;
   }
 
   .project_item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    padding: 20px;
-    flex-wrap: wrap;
+    padding: 10px 0;
+    gap: 14px;
   }
 
   .project_image {
-    width: 620px;
+    width: 100%;
     max-width: 100%;
-    height: 380px;
-    object-fit: cover;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-    border-radius: 10px;
+    height: auto;
   }
 
-  .project_story, .project_story_2, .project_story_3 {
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px #000;
-    word-spacing: 2px;
-    letter-spacing: 1px;
-    font-family: "Mukta";
+  .project_story,
+  .project_story_2,
+  .project_story_3 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.95em;
     padding: 0 10px;
-    margin: 0;
-    flex: 1;
-    min-width: 320px;
-    max-width: 460px;
-    text-align: left;
-    font-size: 1.2em;
+    text-align: center;
   }
 
-  .project_story_2 a {
-    display: block; /* Make links stack vertically */
-    margin-bottom: 10px;
+  .project_story_2 a,
+  .project_story_3 a {
+    display: inline-block;
+    margin-bottom: 8px;
   }
 }
 
