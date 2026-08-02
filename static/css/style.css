@@ -155,16 +155,24 @@ html {
   transform-origin: center;
   transform: rotateY(calc(var(--i) * 51.43deg)) translateZ(300px);
 }
-
 .image-container span img {
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  image-rendering: optimizeQuality;
-  image-rendering: crisp-edges;
+  display: block;
 }
+/*.image-container span img {
+ position: absolute;
+ left: 0;
+ top: 0;
+ max-width: 100%;
+ height: auto;
+ image-rendering: optimizeQuality;
+ image-rendering: crisp-edges;
+}
+*/
 
 .btn-container {
   display: flex;
