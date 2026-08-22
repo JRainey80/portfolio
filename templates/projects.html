@@ -8,17 +8,13 @@
     <!-- Project 3 -->
     <div class="project_item">
       <p class="project_story_3">
-        <a href="https://www.kubecraft.dev/" target="_blank" rel="noopener noreferrer">KubeCraft</a>
+        
         <a href="https://github.com/JRainey80/Lab#" target="_blank" rel="noopener noreferrer">Current Build: Homelab/Proxmox/KubeCraft</a>
-        Built a 3-node Proxmox homelab from the ground up to support ongoing work in 
-        KubeCraft, a Kubernetes-focused program centered on hands-on DevOps and cloud engineering. 
-        The lab required hardware installation, networking, virtualization, and cluster
-        configuration, creating a realistic environment for building and testing infrastructure projects. 
-        Within this setup, worked extensively with Docker, Linux administration, and system-level 
-        configuration, including building an Arch Linux machine from scratch with full disk encryption 
-        and manually configured services. This project reflects a strong foundation in the core technologies 
-        behind Kubernetes and cloud-native systems, with current work focused on applying that foundation 
-        toward Kubernetes cluster deployment, orchestration, and workload management in a self-hosted environment.
+      Built a 3-node high-availability Kubernetes cluster on a self-assembled Proxmox homelab — from bare-metal hardware and VLAN-segmented networking up through orchestration and GitOps. The cluster runs k3s with an embedded etcd datastore across three control planes for quorum-based resilience, Cilium as the CNI for pod networking and network policy, and sits behind an OPNsense firewall on an isolated, segmented network.
+
+Application delivery is fully GitOps-driven with Flux — the cluster's desired state lives in Git and reconciles automatically. Using Flux's Helm controller, I deployed the kube-prometheus stack as a HelmRelease, giving the environment real observability through Prometheus and Grafana. Getting here meant hands-on work across the full stack: hardware installation and 2.5GbE networking, Proxmox virtualization, Docker, and deep Linux administration — including building an Arch Linux system from scratch with full-disk encryption and manually configured services.
+
+The build is part of KubeCraft, a Kubernetes-focused DevOps and cloud-engineering program. Next up: MetalLB for bare-metal load balancing and Longhorn for distributed, replicated storage.
       </p>
       <img class="project_image" src="{{url_for('static', filename='img/Homelab project image.png') }}" alt="Resume API Project">
     </div>
